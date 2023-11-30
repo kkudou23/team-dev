@@ -1,1 +1,30 @@
 @charset "utf-8";
+.catch {
+    display: flex;
+    align-items: center; /* 垂直中心 */
+    justify-content: center; /* 水平中心 */
+    font-size: 35px;
+  }
+  .catch:before, .catch:after {
+    border-top: 1px solid;
+    content: "";
+    width: 3em; /* 線の長さ */
+  }
+  .catch:before {
+    margin-right: 1em; /* 文字の右隣 */
+  }
+  .catch:after {
+    margin-left: 1em; /* 文字の左隣 */
+  }
+  h2{
+    width: 90%;
+    text-align: center;
+    padding: 15px;
+}
+.box{
+    display: flex;
+    margin-bottom: 30px;
+}
+.p{
+    padding: 20px;
+}
