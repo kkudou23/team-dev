@@ -53,11 +53,11 @@ nav ul {
     list-style: none;
 }
 
-ul li {
+nav ul li {
     width: 25%;
     text-align: center;
 }
 
-ul li + li {
+nav ul li + li {
     border-left: 1px solid gray;
 }
