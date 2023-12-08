@@ -16,7 +16,7 @@
   .catch:after {
     margin-left: 1em; /* 文字の左隣 */
   }
-  h2{
+  .foodname{
     /* width: 90%; */
     text-align: center;
     padding: 15px;
