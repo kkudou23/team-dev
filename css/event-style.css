@@ -3,7 +3,6 @@
 #page-title {
     text-align: center;
     padding: 20px;
-    margin-bottom: 30px;
 
     background-color: #0c5e71;
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Iwate_Prefecture.svg/1280px-Flag_of_Iwate_Prefecture.svg.png?20211110100613);
@@ -34,7 +33,7 @@
 
 article {
     width: 80%;
-    margin: 30px auto;
+    margin: 50px auto;
 } @media screen and (min-width:750px) {
     article {
         display: flex;
@@ -64,7 +63,7 @@ img {
 } @media screen and (min-width:750px) {
     .about {
         width: 45vw;
-        padding-left: 30px;
+        padding: 0 0 0 30px;
     }
 }
 
@@ -75,5 +74,5 @@ img {
 }
 
 .about-text {
-    padding: 10px 20px 10px 35px;
+    padding: 15px 20px 0px 35px;
 }
