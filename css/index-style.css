@@ -1,1 +1,116 @@
 @charset "utf-8";
+
+/* メイン画像 */
+.top-img-container {
+    position: relative;
+}
+
+.top-img-container::after {
+    content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(180deg, transparent 0 80%, #FFF 100%);
+}
+
+.top-img-container img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: left bottom;
+}
+
+.top-txt {
+    font-size: 40px;
+    color: white;
+    width: 400px;
+    padding: 20px 30px;
+    text-align: center;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 3px solid white;
+    text-shadow: 1px 1px 0 rgb(60, 60, 60);
+    box-shadow: 1px 1px 0 rgb(60, 60, 60);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+hr {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 1px 1px 0 rgb(60, 60, 60);
+    margin: 0 0 10px;
+}
+
+.txt-gold {
+    background: -webkit-linear-gradient(top, #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: none;
+}
+
+.bg-white {
+    width: 50%;
+    background-color: white;
+    box-shadow: 1px 1px 0 rgb(60, 60, 60);
+    margin: 0 auto;
+}
+/* メイン画像ここまで */
+
+/* 各ページに飛ぶ画像メニュー */
+.img-container {
+    height: 200px;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.img-container:hover img {
+    transform: scale(1.1);
+    opacity: 0.6;
+}
+
+.page-title {
+    color: white;
+    font-size: 50px;
+    padding: 0 0 0 15vw;
+    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    opacity: 0;
+}
+
+.page-title:hover {
+    opacity: 1;
+}
+
+.spacing {
+    letter-spacing: 40px;
+}
+
+.licence {
+    width: 70%;
+    margin: 15px auto;
+    padding: 20px 60px;
+    border: 1px solid gray;
+    box-shadow: 3px 3px 0 lightgray;
+}
