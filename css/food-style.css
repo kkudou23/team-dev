@@ -3,7 +3,7 @@
     display: flex;
     align-items: center; /* 垂直中心 */
     justify-content: center; /* 水平中心 */
-    font-size: 35px;
+    font-size: 45px;
   }
   .catch:before, .catch:after {
     border-top: 1px solid;
@@ -16,15 +16,38 @@
   .catch:after {
     margin-left: 1em; /* 文字の左隣 */
   }
-  h2{
-    width: 90%;
+  .foodname{
+    /* width: 90%; */
     text-align: center;
     padding: 15px;
+    font-size: 35px;
 }
 .box{
     display: flex;
-    margin-bottom: 30px;
-}
-.p{
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 50px;
+      /* align-items: center; */
+  }
+p{
     padding: 20px;
+    font-size: 20px;
+}
+.item img{
+  display: block;
+  /* width: 452px;
+  height: 300px; */
+  width: 462px;
+  height: 360px;
+  margin: auto;
+}
+.A1{
+  width: 45%;
+  background-color: #f6f6f6;
+  padding-bottom: 20px;
+  box-shadow: 2px 2px 4px gray;
+}
+.item{
+  width: 90%;
+  margin: 0 auto;
 }
