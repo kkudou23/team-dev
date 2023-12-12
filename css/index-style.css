@@ -67,7 +67,6 @@ hr {
 .img-container {
     height: 200px;
     width: 100%;
-    background-color: black;
     position: relative;
     overflow: hidden;
 }
@@ -76,31 +75,33 @@ hr {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    transition: transform 0.6s ease;
+}
+
+.img-container .page-title {
+    height: 100%;
+    width: 100%;
+
+    font-size: 70px;
+    color: white;
+    background: rgba(0,0,0,0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: absolute;
+    padding-left: 15vw;
+    bottom: 0;
+
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.img-container:hover .page-title {
+    opacity: 1;   
 }
 
 .img-container:hover img {
     transform: scale(1.1);
-    opacity: 0.6;
-}
-
-.page-title {
-    color: white;
-    font-size: 50px;
-    padding: 0 0 0 15vw;
-    
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    align-items: center;
-    display: flex;
-    position: absolute;
-    opacity: 0;
-}
-
-.page-title:hover {
-    opacity: 1;
 }
 
 .spacing {
