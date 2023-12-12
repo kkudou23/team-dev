@@ -75,9 +75,10 @@ hr {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    transition: all 0.5s ease;
 }
 
-.img-container .page-title {
+.img-container .txt-on-img {
     height: 100%;
     width: 100%;
 
@@ -96,8 +97,8 @@ hr {
     transition: all 0.5s ease;
 }
 
-.img-container:hover .page-title {
-    opacity: 1;   
+.img-container:hover .txt-on-img {
+    opacity: 1;
 }
 
 .img-container:hover img {
@@ -107,11 +108,20 @@ hr {
 .spacing {
     letter-spacing: 40px;
 }
+.img-container .licence {
+    font-size: medium;
+    display: block;
+    padding: 10px 150px;
+}
 
-.licence {
-    width: 70%;
-    margin: 15px auto;
-    padding: 20px 60px;
-    border: 1px solid gray;
-    box-shadow: 3px 3px 0 lightgray;
+.licence ul {
+    margin: 5px;
+}
+
+.licence a {
+    color: white;
+}
+
+.licence a:hover {
+    color: blue;
 }
