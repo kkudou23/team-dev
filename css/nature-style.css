@@ -1,1 +1,114 @@
 @charset "utf-8";
+
+/* タイトル部分 */
+.background-title {
+    background-image: url(../img/Mt.Iwate_and_Morioka.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+}
+
+.logo-title {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    text-align: center;
+    height: 100%;
+    padding: 50px;
+    color: white;
+    font-weight: bold;
+    text-shadow:1px 1px 0 black, -1px -1px 0 black,
+              -1px 1px 0 black, 1px -1px 0 black,
+              0px 1px 0 black,  0 -1px 0 black,
+              -1px 0 0 black, 1px 0 0 black;
+}
+
+.title h1{
+    font-family: 'MS PGothic', serif;
+    letter-spacing: 0.2rem;
+    font-size: 40px;
+}
+
+.title h2 {
+    font-family: 'MS PGothic', serif;
+    letter-spacing: 0.2rem;
+    font-size: 32px;
+}
+
+/* メイン部分 */
+body {
+    background-color: rgb(172, 237, 172);
+}
+
+.item {
+    margin: 3rem auto;
+    width: 90%;
+}
+
+#bg-iwatesan {
+    background-image: url(../img/Iwatesan.jpg);
+    background-position: center;
+    background-size: 950px;
+}
+
+#bg-ryusendo {
+    background-image: url(../img/ryusendo.jpg);
+    background-position: center;
+    background-size: 950px;
+}
+
+#bg-joudogahama {
+    background-image: url(../img/jodogahama.jpg);
+    background-position: center;
+    background-size: 950px;
+}
+
+#bg-nanatugama {
+    background-image: url(../img/nanatugama.jpg);
+    background-position: center;
+    background-size: 950px;
+}
+
+
+.container {
+    display: flex;
+    width: 90%;
+    margin:auto;
+    padding: 1.5rem;
+}
+
+.background-main {
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+.item-title {
+    width: 90%;
+    border-bottom: 1px solid black;
+    margin: 0 auto;
+    padding: 0.8rem 0;
+}
+
+.item-title h2 {
+    text-align: center;
+    font-size: 35px;
+    font-family: "游明朝", serif;
+    letter-spacing: 0.2rem;
+}
+
+.picture {
+    width: 45%;
+}
+
+.picture img {
+    margin: 0 auto;
+}
+
+.container p {
+    width: 55%;
+    margin-left: 1.5rem;
+    font-size: 16px;
+    font-family: "游明朝", serif;
+}
