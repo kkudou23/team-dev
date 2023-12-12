@@ -50,7 +50,7 @@ header {
 }
 
 footer {
-    margin: 0 0 20px;
+    padding: 0 0 20px;
     text-align: center;
     border-top: 1px solid gray;
     background-color: white;
