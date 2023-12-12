@@ -37,6 +37,7 @@ header {
     background-color: gray;
     color: white;
     text-decoration: none;
+    font-weight: normal;
 }
 
 footer {
@@ -48,7 +49,7 @@ footer {
 
 nav ul {
     margin: 20px 0;
-    padding: 0px 180px;
+    padding: 0px 250px;
     display: flex;
     list-style: none;
 }
@@ -60,4 +61,27 @@ nav ul li {
 
 nav ul li + li {
     border-left: 1px solid gray;
+}
+
+.currently {
+    color: gray;
+}
+
+@media screen and (max-width:900px) {
+    nav ul {
+        margin: 0;
+        padding: 15px;
+        display: block;
+        list-style: none;
+    }
+    
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        padding: 3px;
+    }
+    
+    nav ul li + li {
+        border-left: 0px;
+    }
 }
