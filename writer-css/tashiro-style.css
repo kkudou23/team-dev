@@ -1,1 +1,42 @@
 @charset "utf-8";
+
+.profile {  
+    width: 600px;   
+    border-radius: 7px;    
+    padding: 2em;  
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }  
+  .profile .header {  
+    margin-bottom: 5px;
+    margin-top: 5px;  
+    border-bottom: 1px dashed #888;  
+    text-align: center;  
+  }  
+  .profile .header strong {  
+    font-size: 1.5em;  
+    color: #444;  
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: auto;
+  }  
+  .profile .body {  
+    text-align: center;  
+  }  
+  .profile .top img {  
+    width: 340px;  
+    border-radius: 7px;  
+    margin: auto;
+    filter: drop-shadow(5px 5px 5px #aaa);
+    margin-bottom: 20px;
+    margin-top: 20px;
+  } 
+  .profile .buttom p{
+    text-align: center;
+    line-height: 25px;
+  }
+  .profile .div strong{
+    margin-top: auto;
+    margin-bottom: auto;
+  }
