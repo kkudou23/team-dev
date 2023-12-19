@@ -1,8 +1,8 @@
 @charset "utf-8";
 /* 
 https://unpkg.com/modern-css-reset/dist/reset.min.css
-上記のリセットCSSを使用していたところ、transitionが上手く適応されなかったため、
-その原因となる一文をコメントアウトしたこのファイルをリセットCSSとして使用します。
+上記のリセットCSSを使用していたところ、transitionやanimationが上手く適応されなかったため、
+その原因となる文をコメントアウトしたこのファイルをリセットCSSとして使用します。
 */
 
 *, *::before, *::after {
@@ -46,9 +46,9 @@ input, button, textarea, select {
     }
 
     *, *::before, *::after {
-        animation-duration: .01ms !important;
-        animation-iteration-count: 1 !important;
-        /* transition-duration: .01ms !important; */
+        /* animation-duration: .01ms !important; */ /* この一行があるとanimationがすごいスピードで実行される */
+        /* animation-iteration-count: 1 !important; */ /* animationが効かない原因 */
+        /* transition-duration: .01ms !important; */ /* transitionが効かない原因 */
         scroll-behavior: auto !important
     }
 }
