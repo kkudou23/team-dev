@@ -39,13 +39,18 @@
 }
 
 /* メイン部分 */
-body {
+main {
     background-color: rgb(172, 237, 172);
+    padding: 3rem 0;
 }
 
 .item {
-    margin: 3rem auto;
+    margin: 0 auto;
     width: 90%;
+}
+
+.item + .item {
+    margin-top: 3rem;
 }
 
 #bg-iwatesan {
