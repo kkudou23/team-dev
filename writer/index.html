@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ライター紹介</title>
-    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/all-style.css">
     <link rel="stylesheet" href="../writer-css/index-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,20 +15,51 @@
 <body>
     <header>
         <h2><a href="../index.html" class="site-title">岩手について</a></h2>
-        <a href="index.html" class="simple-anchor writer-button">ライター紹介</a>
+        <p class="writer-button-in-writer-index">ライター紹介</p>
     </header>
     <!----- これより上は変更しないでください ----->
 
+    <main>
+        <div id="page-title">
+            <h1>ライター紹介</h1>
+            <p>(五十音順)</p>
+        </div>
+        <div class="writer-card">
+            <img src="../img/kudou_icon.jpg">
+            <div class="text">
+                <h2>工藤 允弓</h2>
+                <p>担当ページ : <a href="../event.html">岩手の行事</a></p>
+                <a href="kudou.html" class="writer-page">» 自己紹介を見る</a>
+            </div>
+        </div>
 
+        <div class="writer-card">
+            <img src="../img/tashiro_icon.jpg">
+            <div class="text">
+                <h2>田代 帆花</h2>
+                <p>担当ページ : <a href="../food.html">岩手の食</a></p>
+                <a href="tashiro.html" class="writer-page">» 自己紹介を見る</a>
+            </div>
+        </div>
+
+        <div class="writer-card">
+            <img src="../img/higashiyama_icon.png">
+            <div class="text">
+                <h2>東山 譲</h2>
+                <p>担当ページ : <a href="../nature.html">岩手の自然</a></p>
+                <a href="higashiyama.html" class="writer-page">» 自己紹介を見る</a>
+            </div>
+        </div>
+    </main>
 
     <!----- これより下は変更しないでください ----->
     <footer>
         <nav>
             <ul>
-                <li><a href="food.html" class="simple-anchor">岩手の食</a></li>
-                <li><a href="nature.html" class="simple-anchor">岩手の自然</a></li>
-                <li><a href="event.html" class="simple-anchor">岩手の行事</a></li>
-                <li><a href="writer/index.html" class="simple-anchor">ライター紹介</a></li>
+                <li><a href="../food.html" class="simple-anchor">岩手の食</a></li>
+                <li><a href="../nature.html" class="simple-anchor">岩手の自然</a></li>
+                <li><a href="../event.html" class="simple-anchor">岩手の行事</a></li>
+                <li class="currently">ライター紹介</li>
             </ul>
         </nav>
         2023年 - 1年1組 チームC

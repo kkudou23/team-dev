@@ -23,16 +23,25 @@
 }
 
 .top-txt {
+    font-family: 'Shippori Mincho', serif;
     font-size: 40px;
     color: white;
     width: 400px;
     padding: 20px 30px;
     text-align: center;
 
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.4);
     border: 3px solid white;
-    text-shadow: 1px 1px 0 rgb(60, 60, 60);
-    box-shadow: 1px 1px 0 rgb(60, 60, 60);
+    box-shadow: 
+    4px 4px 20px rgba(175, 175, 175, 0.3),
+    4px -4px 20px rgba(175, 175, 175, 0.3),
+    -4px 4px 20px rgba(175, 175, 175, 0.3),
+    -4px -4px 20px rgba(175, 175, 175, 0.3);
+    text-shadow: 
+    4px 4px 5px rgba(175, 175, 175, 0.7),
+    4px -4px 5px rgba(175, 175, 175, 0.7),
+    -4px 4px 5px rgba(175, 175, 175, 0.7),
+    -4px -4px 5px rgba(175, 175, 175, 0.7);
 
     position: absolute;
     top: 50%;
@@ -44,11 +53,14 @@ hr {
     height: 3px;
     width: 100%;
     background-color: white;
-    box-shadow: 1px 1px 0 rgb(60, 60, 60);
+    box-shadow: 1px 1px 0 rgb(175, 175, 175);
     margin: 0 0 10px;
 }
 
 .txt-gold {
+    font-family: 'Shippori Mincho', serif;
+    font-weight: bold;
+    font-size: 50px;
     background: -webkit-linear-gradient(top, #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -58,7 +70,11 @@ hr {
 .bg-white {
     width: 50%;
     background-color: white;
-    box-shadow: 1px 1px 0 rgb(60, 60, 60);
+    box-shadow: 
+    4px 4px 20px rgba(175, 175, 175, 0.3),
+    4px -4px 20px rgba(175, 175, 175, 0.3),
+    -4px 4px 20px rgba(175, 175, 175, 0.3),
+    -4px -4px 20px rgba(175, 175, 175, 0.3);
     margin: 0 auto;
 }
 /* メイン画像ここまで */
@@ -67,50 +83,154 @@ hr {
 .img-container {
     height: 200px;
     width: 100%;
-    background-color: black;
     position: relative;
-    overflow: hidden;
-}
+    overflow: hidden;}
 
 .img-container img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    transition: transform 0.6s ease;
+
+    filter:grayscale(100%) blur(2px);
+    transition: all 1s ease;
+}
+
+.img-container .txt-on-img {
+    height: 100%;
+    width: 100%;
+
+    font-size: 70px;
+    color: white;
+    background: rgba(0,0,0,0.3);
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: absolute;
+    padding-left: 15vw;
+    bottom: 0;
+
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.img-container:hover .txt-on-img {
+    opacity: 1;
 }
 
 .img-container:hover img {
+    filter: none;
     transform: scale(1.1);
-    opacity: 0.6;
-}
-
-.page-title {
-    color: white;
-    font-size: 50px;
-    padding: 0 0 0 15vw;
-    
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    align-items: center;
-    display: flex;
-    position: absolute;
-    opacity: 0;
-}
-
-.page-title:hover {
-    opacity: 1;
 }
 
 .spacing {
     letter-spacing: 40px;
 }
 
+.img-container .licence {
+    font-size: 15px;
+    display: block;
+    padding: 10px 10vw;
+}
+
 .licence {
-    width: 70%;
-    margin: 15px auto;
-    padding: 20px 60px;
-    border: 1px solid gray;
-    box-shadow: 3px 3px 0 lightgray;
+    overflow: auto;
+}
+
+.licence ul {
+    margin: 10px 50px;
+    list-style: none;
+    display: inline-block;
+}
+
+.licence ul li {
+    padding-left: 20px;
+}
+
+.licence a {
+    color: white;
+}
+
+.licence a:hover {
+    color: blue;
+}
+
+.slide-show-frame{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#img-01, #img-02, #img-03, #img-04 {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#img-01{
+    /* 岩手山(9/12) */
+    background-image: url('https://find47.jp/ja/i/mMKai/image_file');
+    background-position: bottom;
+    animation: slide-animation-01 40s infinite;
+}
+
+#img-02{
+    /* さんさ踊り(9/16) */
+    background-image: url('https://find47.jp/ja/i/YMlU6/image_file');
+    background-position: bottom;
+    animation: slide-animation-02 40s infinite;
+}
+
+#img-03{
+    /* 雪の日(12/12) */
+    background-image: url('https://find47.jp/ja/i/wIzMR/image_file');
+    background-position: center;
+    animation: slide-animation-03 40s infinite;
+}
+
+#img-04{
+    /* 厳美渓(8/6) */
+    background-image: url('https://find47.jp/ja/i/j0xeh/image_file');
+    background-position: top;
+    animation: slide-animation-04 40s infinite;
+}
+
+@keyframes slide-animation-01 {
+    0% {opacity: 1;}
+    25% {opacity: 1;}
+    30% {opacity: 0; transform: scale(1.1);}
+    95% {opacity: 0; transform: scale(1.0);}
+    100% {opacity: 1;}
+}
+
+@keyframes slide-animation-02 {
+    0% {opacity: 0;}
+    21% {opacity: 0; transform: scale(1.1);}
+    26% {opacity: 1;}
+    50% {opacity: 1}
+    55% {opacity: 0; transform: scale(1.0);}
+    100% {opacity: 0;}
+}
+
+@keyframes slide-animation-03 {
+    0% {opacity: 0;}
+    46% {opacity: 0; transform: scale(1.0);}
+    51% {opacity: 1;}
+    75% {opacity: 1}
+    80% {opacity: 0; transform: scale(1.1);}
+    100% {opacity: 0;}
+}
+
+@keyframes slide-animation-04 {
+    0% {opacity: 0;}
+    71% {opacity: 0; transform: scale(1.1);}
+    76% {opacity: 1;}
+    95% {opacity: 1;}
+    100% {opacity: 0; transform: scale(1.0);}
 }

@@ -1,1 +1,68 @@
 @charset "utf-8";
+
+#page-title {
+    background-color: #f0f0f0;
+    text-align: center;
+    height: 150px;
+    padding: 25px;
+    background-image: 
+    repeating-linear-gradient(135deg, transparent, transparent 3px, #e0e0e0 3px, #e0e0e0 5px)
+}
+
+#page-title h1 {
+    color: black;
+    font-size: 45px;
+}
+
+#page-title p {
+    color: gray;
+    font-size: 20px;
+}
+
+.writer-card {
+    width: 550px;
+    height: 180px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid gray;
+    position: relative;
+    display: flex;
+}
+
+.writer-card img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    margin: auto 5px;
+    border: 1px solid #ddd;
+}
+
+.writer-card h2 {
+    width: 360px;
+    font-size: 30px;
+    padding: 0 20px 5px;
+    margin: 0 10px;
+    border-bottom: 1px solid gray;
+}
+
+.writer-card p {
+    padding: 5px 35px;
+    color: gray;
+}
+
+.writer-card .writer-page {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 20px 25px;
+}
+
+.writer-card a {
+    color: black;
+    text-decoration: none;
+}
+
+.writer-card a:hover {
+    color: blue;
+    text-decoration: underline;
+}

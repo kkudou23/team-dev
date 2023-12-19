@@ -5,8 +5,8 @@
     padding: 20px;
 
     background-color: #0c5e71;
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Iwate_Prefecture.svg/1280px-Flag_of_Iwate_Prefecture.svg.png?20211110100613);
-    background-size: 450px;
+    background-image: url(../img/k0739_4.png);
+    background-size: 100px;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -23,9 +23,9 @@
 }
 
 #page-title p {
-    width: 400px;
-    margin: 0px auto;
-    padding: 5px;
+    width: 50vw;
+    margin: 0 auto;
+    padding: 10px;
     background-color: rgba(255, 255, 255, 0.7);
 }
 
