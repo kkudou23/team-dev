@@ -1,10 +1,11 @@
 @charset "utf-8";
 
 #page-title {
-    background-color: #f0f0f0;
-    text-align: center;
     height: 150px;
     padding: 25px;
+    text-align: center;
+
+    background-color: #f0f0f0;
     background-image: 
     repeating-linear-gradient(135deg, transparent, transparent 3px, #e0e0e0 3px, #e0e0e0 5px)
 }
@@ -46,7 +47,7 @@
 }
 
 .writer-card p {
-    padding: 5px 35px;
+    padding: 5px 33px;
     color: gray;
 }
 
@@ -54,15 +55,5 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    margin: 20px 25px;
-}
-
-.writer-card a {
-    color: black;
-    text-decoration: none;
-}
-
-.writer-card a:hover {
-    color: blue;
-    text-decoration: underline;
+    margin: 20px;
 }
