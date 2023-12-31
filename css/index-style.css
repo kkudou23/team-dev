@@ -175,29 +175,29 @@ hr {
 
 #img-01{
     /* 岩手山(9/12) */
-    background-image: url('https://find47.jp/ja/i/mMKai/image_file');
-    background-position: bottom;
+    background-image: url(../img/index_MtIwate_1.jpg);
+    background-position: 0 70%;
     animation: slide-animation-01 40s infinite;
 }
 
 #img-02{
     /* さんさ踊り(9/16) */
-    background-image: url('https://find47.jp/ja/i/YMlU6/image_file');
-    background-position: bottom;
+    background-image: url(../img/index_SansaOdori.jpg);
+    background-position: 0 75%;
     animation: slide-animation-02 40s infinite;
 }
 
 #img-03{
     /* 雪の日(12/12) */
-    background-image: url('https://find47.jp/ja/i/wIzMR/image_file');
-    background-position: center;
+    background-image: url(../img/index_SnowDay.jpg);
+    background-position: 0 40%;
     animation: slide-animation-03 40s infinite;
 }
 
 #img-04{
     /* 厳美渓(8/6) */
-    background-image: url('https://find47.jp/ja/i/j0xeh/image_file');
-    background-position: top;
+    background-image: url(../img/index_Genbikei.jpg);
+    background-position: 0 40%;
     animation: slide-animation-04 40s infinite;
 }
 
