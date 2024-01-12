@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* メイン画像 */
+/* メイン画像部 */
 .top-img-container {
     position: relative;
 }
@@ -19,142 +19,9 @@
     height: 100vh;
     width: 100vw;
     object-fit: cover;
-    object-position: left bottom;
 }
 
-.top-txt {
-    font-family: 'Shippori Mincho', serif;
-    font-size: 40px;
-    color: white;
-    width: 400px;
-    padding: 20px 30px;
-    text-align: center;
-
-    background-color: rgba(255, 255, 255, 0.4);
-    border: 3px solid white;
-    box-shadow: 
-    4px 4px 20px rgba(175, 175, 175, 0.3),
-    4px -4px 20px rgba(175, 175, 175, 0.3),
-    -4px 4px 20px rgba(175, 175, 175, 0.3),
-    -4px -4px 20px rgba(175, 175, 175, 0.3);
-    text-shadow: 
-    4px 4px 5px rgba(175, 175, 175, 0.7),
-    4px -4px 5px rgba(175, 175, 175, 0.7),
-    -4px 4px 5px rgba(175, 175, 175, 0.7),
-    -4px -4px 5px rgba(175, 175, 175, 0.7);
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-hr {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    box-shadow: 1px 1px 0 rgb(175, 175, 175);
-    margin: 0 0 10px;
-}
-
-.txt-gold {
-    font-family: 'Shippori Mincho', serif;
-    font-weight: bold;
-    font-size: 50px;
-    background: -webkit-linear-gradient(top, #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    text-shadow: none;
-}
-
-.bg-white {
-    width: 50%;
-    background-color: white;
-    box-shadow: 
-    4px 4px 20px rgba(175, 175, 175, 0.3),
-    4px -4px 20px rgba(175, 175, 175, 0.3),
-    -4px 4px 20px rgba(175, 175, 175, 0.3),
-    -4px -4px 20px rgba(175, 175, 175, 0.3);
-    margin: 0 auto;
-}
-/* メイン画像ここまで */
-
-/* 各ページに飛ぶ画像メニュー */
-.img-container {
-    height: 200px;
-    width: 100%;
-    position: relative;
-    overflow: hidden;}
-
-.img-container img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-
-    filter:grayscale(100%) blur(2px);
-    transition: all 1s ease;
-}
-
-.img-container .txt-on-img {
-    height: 100%;
-    width: 100%;
-
-    font-size: 70px;
-    color: white;
-    background: rgba(0,0,0,0.3);
-
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    position: absolute;
-    padding-left: 15vw;
-    bottom: 0;
-
-    opacity: 0;
-    transition: all 0.5s ease;
-}
-
-.img-container:hover .txt-on-img {
-    opacity: 1;
-}
-
-.img-container:hover img {
-    filter: none;
-    transform: scale(1.1);
-}
-
-.spacing {
-    letter-spacing: 40px;
-}
-
-.img-container .licence {
-    font-size: 15px;
-    display: block;
-    padding: 10px 10vw;
-}
-
-.licence {
-    overflow: auto;
-}
-
-.licence ul {
-    margin: 10px 50px;
-    list-style: none;
-    display: inline-block;
-}
-
-.licence ul li {
-    padding-left: 20px;
-}
-
-.licence a {
-    color: white;
-}
-
-.licence a:hover {
-    color: blue;
-}
-
+/* スライドショー */
 .slide-show-frame{
     position: relative;
     width: 100%;
@@ -174,28 +41,28 @@ hr {
 }
 
 #img-01{
-    /* 岩手山(9/12) */
+    /* 岩手山 */
     background-image: url(../img/index_MtIwate_1.jpg);
     background-position: 0 70%;
     animation: slide-animation-01 40s infinite;
 }
 
 #img-02{
-    /* さんさ踊り(9/16) */
+    /* さんさ踊り */
     background-image: url(../img/index_SansaOdori.jpg);
     background-position: 0 75%;
     animation: slide-animation-02 40s infinite;
 }
 
 #img-03{
-    /* 雪の日(12/12) */
+    /* 雪の日 */
     background-image: url(../img/index_SnowDay.jpg);
     background-position: 0 40%;
     animation: slide-animation-03 40s infinite;
 }
 
 #img-04{
-    /* 厳美渓(8/6) */
+    /* 厳美渓 */
     background-image: url(../img/index_Genbikei.jpg);
     background-position: 0 40%;
     animation: slide-animation-04 40s infinite;
@@ -233,4 +100,144 @@ hr {
     76% {opacity: 1;}
     95% {opacity: 1;}
     100% {opacity: 0; transform: scale(1.0);}
+}
+/* スライドショーここまで */
+
+.top-txt {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: white;
+    width: 400px;
+    padding: 20px 30px;
+    text-align: center;
+
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 3px solid white;
+    box-shadow: 
+    4px 4px 20px rgba(175, 175, 175, 0.3),
+    4px -4px 20px rgba(175, 175, 175, 0.3),
+    -4px 4px 20px rgba(175, 175, 175, 0.3),
+    -4px -4px 20px rgba(175, 175, 175, 0.3);
+    text-shadow: 
+    4px 4px 5px rgba(175, 175, 175, 0.7),
+    4px -4px 5px rgba(175, 175, 175, 0.7),
+    -4px 4px 5px rgba(175, 175, 175, 0.7),
+    -4px -4px 5px rgba(175, 175, 175, 0.7);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+hr {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 1px 1px 0 rgb(175, 175, 175);
+    margin: 0 0 10px;
+}
+
+.txt-gold {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 900;
+    font-size: 50px;
+    background: -webkit-linear-gradient(top, #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: none;
+}
+
+.bg-white {
+    width: 50%;
+    background-color: white;
+    box-shadow: 
+    4px 4px 20px rgba(175, 175, 175, 0.3),
+    4px -4px 20px rgba(175, 175, 175, 0.3),
+    -4px 4px 20px rgba(175, 175, 175, 0.3),
+    -4px -4px 20px rgba(175, 175, 175, 0.3);
+    margin: 0 auto;
+}
+/* メイン画像部ここまで */
+
+/* 各ページに飛ぶ画像メニュー */
+.img-container {
+    height: 200px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    filter:grayscale(100%) blur(2px);
+    transition: all 1s ease;
+}
+
+.img-container .txt-on-img {
+    height: 100%;
+    width: 100%;
+
+    font-size: 70px;
+    color: white;
+    background: rgba(0,0,0,0.3);
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: absolute;
+    padding-left: 15vw;
+    bottom: 0;
+
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.txt-on-img::after {
+    content: '▶';
+    font-size: 35px;
+    padding: 6px 50px 0;
+}
+
+.img-container:hover .txt-on-img {
+    opacity: 1;
+}
+
+.img-container:hover img {
+    filter: none;
+    transform: scale(1.1);
+}
+
+.img-container .licence {
+    font-size: 15px;
+    display: block;
+    padding: 10px 10vw;
+    overflow: auto;
+}
+
+.licence::after {
+    content: none;
+}
+
+.licence ul {
+    margin: 10px 50px;
+    list-style: none;
+    display: inline-block;
+}
+
+.licence ul li {
+    padding-left: 20px;
+}
+
+.licence a {
+    color: white;
+}
+
+.licence a:hover {
+    color: blue;
+    background-color: rgba(255, 255, 255, 0.5);
 }
