@@ -73,7 +73,6 @@ img {
 
 .about-title {
     padding: 5px 15px;
-    margin-bottom: 15px;
 
     background-color: #f0f0f0;
     border-left: 15px solid #0c5e71;
@@ -85,18 +84,24 @@ img {
 }
 
 .about-text {
-    padding: 0 20px 15px 35px;
+    margin: 15px 20px 15px 35px;
     line-height: 1.7rem;
 }
 
 b {
     background:linear-gradient(transparent 70%, #b7cfd5 70%);
-    padding: 0 3px;
+    padding: 0 4px;
+}
+
+.no-padding-b {
+    padding: 0;
 }
 
 .about ul {
     margin: 0 30px;
-    padding: 0 25px;
+    padding: 20px 50px;
+    background-color: #f7f7f7;
+    border: 3px solid #f0f0f0;
 }
 
 caption {
