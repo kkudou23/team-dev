@@ -26,15 +26,17 @@
 }
 
 .title h1{
-    font-family: 'MS PGothic', serif;
     letter-spacing: 0.2rem;
     font-size: 40px;
 }
 
 .title h2 {
-    font-family: 'MS PGothic', serif;
     letter-spacing: 0.2rem;
     font-size: 32px;
+}
+
+.title-font {
+    font-family: 'MS PGothic', serif;
 }
 
 /* メイン部分 */
@@ -98,7 +100,6 @@ main {
 .item-title h2 {
     text-align: center;
     font-size: 35px;
-    font-family: "游明朝", serif;
     letter-spacing: 0.2rem;
 }
 
@@ -114,5 +115,8 @@ main {
     width: 55%;
     margin-left: 1.5rem;
     font-size: 16px;
+}
+
+.introduction-font {
     font-family: "游明朝", serif;
 }
