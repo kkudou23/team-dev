@@ -14,21 +14,22 @@
 
 .bg {
     background-color: #FFF2F2;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
 }
 
 .item {
     margin: 2rem auto 2rem 2rem;
     padding: 0.5rem;
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
     width: 470px;
 }
+
+/* アイコン */
 
 .icon-size {
     width: 470px;
     height: 470px;
     margin: 2rem 2rem 2rem auto;
     padding: 25px;
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
 }
 
 .icon img {
@@ -37,6 +38,7 @@
     object-fit: cover;
 }
 
+/* プロフィール */
 
 .mark::before {
     content: "";
@@ -52,21 +54,15 @@ h2 + p {
     width: 55%;
     font-size: 50px;
     margin: auto auto auto 1.0rem;
-    font-family: "游明朝", serif;
     font-weight: 400;
 }
 
 .item h3 {
     width: 45%;
     margin: auto;
-    font-family: "游明朝", serif;
     font-weight: lighter;
 }
 
-.item h2 {
-    font-family: "游明朝", serif;
-}
-
-.item p {
+.font {
     font-family: "游明朝", serif;
 }
